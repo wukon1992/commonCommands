@@ -1,2 +1,2 @@
-# commonConmands
-save some conmands that I use them often
+# commonCommands
+save some commands that I use them often
