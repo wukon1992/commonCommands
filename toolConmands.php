@@ -23,7 +23,12 @@
 	------>开始-运行-regedit打开注册表编辑器。
 	------>选择HKEY_CLASSES_ROOT——*——shell，右键，新建项，命名为Edit with Sublime Text3(可以根据自己的喜欢调整)，然后在右边 新建-字符串值，命名为“Icon”，值为"C:\Program Files (x86)\Sublime Text3\sublime_text.exe,0"
 	------>然后在Edit with Sublime Text3下新建-项，命名为command，然后修改右边的默认值为"C:\Program Files (x86)\Sublime Text3\sublime_text.exe %1"
-	
+
 **********************************************************************************************************************************
 
+4、git 配置项目push提交重复输入github帐号
+	------>在每次push 的时候，都要输入用户名和密码，是不是很麻烦？原因是使用了https方式 push，在git bash里边输入 git remote -v
+	------>接下来，我们把它换成ssh方式的。command=>git remote rm origin
+	------>git remote add origin git@github.com:(sosout/myblog.git) 括号内容为仓库名称
+	------>git push origin master
  ?>
