@@ -1,4 +1,4 @@
-Routed方式
+.Routed方式
   1.annotation 方法上添加注释的方式增加路由
     M：
     /**
