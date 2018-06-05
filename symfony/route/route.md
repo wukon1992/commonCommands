@@ -1,4 +1,5 @@
 .Routed方式
+
   1.annotation 方法上添加注释的方式增加路由
     M：
     /**
@@ -104,3 +105,17 @@
     {
     }
     
+    
+    特殊路由参数 ¶
+    你已经看到，每一个路由参数或其默认值最终都是可以做为参数（arguments）用在控制器方法（译注：即action）中的。此外，还有四个特殊参数：每一个都能为你的程序增添一个独有的功能性。
+
+    _controller
+    就像你看到的，此参数用于决定，当路由匹配时，须执行哪个控制器。
+    _format
+    用于设置request format (详见这里)。
+    _fragment
+    用于设置fragment identifier，即，URL中可选的最末部分，起自一个 # 字符，用来识别页面中的某一部分。
+
+    Symfony 3.2: _fragment 参数自Symfony 3.2起被引入。
+    _locale
+
